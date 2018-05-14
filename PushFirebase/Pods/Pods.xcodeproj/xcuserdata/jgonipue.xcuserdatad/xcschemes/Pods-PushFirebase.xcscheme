@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "400CDE67F1895EBA4A82E6042C1062F4"
+               BlueprintIdentifier = "903341707A1223AC2B3D4CE8BA9B4128"
                BuildableName = "Pods_PushFirebase.framework"
                BlueprintName = "Pods-PushFirebase"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "400CDE67F1895EBA4A82E6042C1062F4"
+            BlueprintIdentifier = "903341707A1223AC2B3D4CE8BA9B4128"
             BuildableName = "Pods_PushFirebase.framework"
             BlueprintName = "Pods-PushFirebase"
             ReferencedContainer = "container:Pods.xcodeproj">
