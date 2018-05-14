@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC72D88420A9956700686B39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC72D88320A9956700686B39 /* GoogleService-Info.plist */; };
 		CCB3BEED20A98BC200BD8DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3BEEC20A98BC200BD8DEE /* AppDelegate.swift */; };
 		CCB3BEEF20A98BC200BD8DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3BEEE20A98BC200BD8DEE /* ViewController.swift */; };
 		CCB3BEF220A98BC200BD8DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB3BEF020A98BC200BD8DEE /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 		1C66EF8C43252B9DE05B883A /* Pods_PushFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A8FC4CA6D58BF5AC3A2270 /* Pods-PushFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushFirebase/Pods-PushFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		C348A1223E3C43D744BFF5E2 /* Pods-PushFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushFirebase/Pods-PushFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		CC72D88320A9956700686B39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC72D88520A995BF00686B39 /* PushFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushFirebase.entitlements; sourceTree = "<group>"; };
 		CCB3BEE920A98BC200BD8DEE /* PushFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB3BEEC20A98BC200BD8DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB3BEEE20A98BC200BD8DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,12 +81,14 @@
 		CCB3BEEB20A98BC200BD8DEE /* PushFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				CC72D88520A995BF00686B39 /* PushFirebase.entitlements */,
 				CCB3BEEC20A98BC200BD8DEE /* AppDelegate.swift */,
 				CCB3BEEE20A98BC200BD8DEE /* ViewController.swift */,
 				CCB3BEF020A98BC200BD8DEE /* Main.storyboard */,
 				CCB3BEF320A98BC200BD8DEE /* Assets.xcassets */,
 				CCB3BEF520A98BC200BD8DEE /* LaunchScreen.storyboard */,
 				CCB3BEF820A98BC200BD8DEE /* Info.plist */,
+				CC72D88320A9956700686B39 /* GoogleService-Info.plist */,
 			);
 			path = PushFirebase;
 			sourceTree = "<group>";
@@ -123,6 +128,11 @@
 					CCB3BEE820A98BC200BD8DEE = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCB3BEF720A98BC200BD8DEE /* LaunchScreen.storyboard in Resources */,
+				CC72D88420A9956700686B39 /* GoogleService-Info.plist in Resources */,
 				CCB3BEF420A98BC200BD8DEE /* Assets.xcassets in Resources */,
 				CCB3BEF220A98BC200BD8DEE /* Main.storyboard in Resources */,
 			);
@@ -342,6 +353,7 @@
 			baseConfigurationReference = 45A8FC4CA6D58BF5AC3A2270 /* Pods-PushFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushFirebase/PushFirebase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYUBR92XWJ;
 				INFOPLIST_FILE = PushFirebase/Info.plist;
@@ -359,6 +371,7 @@
 			baseConfigurationReference = C348A1223E3C43D744BFF5E2 /* Pods-PushFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushFirebase/PushFirebase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYUBR92XWJ;
 				INFOPLIST_FILE = PushFirebase/Info.plist;
